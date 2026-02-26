@@ -1,0 +1,163 @@
+.order-container {
+  width: 90%;
+  margin: 10% auto;
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 4px;
+}
+.order-container h2 {
+  font-size: clamp(0.6rem, 5vw, 1.5rem);
+  /* padding-top: 15%; */
+}
+.order-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 11px;
+}
+
+.order-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.order-details h4 {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+.order-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-quantity button {
+  width: clamp(20px, 5vw, 30px);
+  height: clamp(20px, 5vw, 30px);
+  border: none;
+  background-color: #bdbdbd;
+  border-radius: 20%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.order-quantity span {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.order-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.order-price p {
+  color: #ff7a18;
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.remove-btn {
+  display: inline-block;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.cart-total {
+  text-align: right;
+  margin-top: 5%;
+  font-weight: 700;
+  font-size: clamp(0.6rem, 2vw, 1rem);
+  color: #ff7a18;
+}
+.cart-total button {
+  color: #fff;
+}
+/* add more link */
+.add-more {
+  margin-top: 8%;
+}
+a {
+  color: #1e88e5;
+  font-size: clamp(0.8rem, 5vw, 1.2rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+.plus-icon {
+  color: #1e88e5;
+  font-size: clamp(0.5rem, 5vw, 0.8rem);
+  font-weight: 500;
+}
+/* order summary button */
+button {
+  background-color: #ff7a18;
+  height: 40px;
+  padding: 1% 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  border: none;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+  font-weight: 400;
+  color: #000;
+}
+
+/* ================================= */
+/* media query */
+/* ================================= */
+@media (min-width: 768px) {
+  .order-description {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-details {
+    flex: 2;
+  }
+
+  .order-quantity {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+  .order-price {
+    width: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .remove-btn {
+    background-color: #ff7a18;
+    padding: 0 8px;
+    margin-left: 5%;
+  }
+  /* add more link */
+  .add-more {
+    margin-top: -2%;
+  }
+}

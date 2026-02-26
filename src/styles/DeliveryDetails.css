@@ -1,0 +1,79 @@
+/* delivery details container */
+.Delivery-summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, 5vw, 60px);
+  width: 90%;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 20% auto;
+  padding: 3%;
+}
+/* title */
+.Delivery-title {
+  color: #000;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 5vw) 2rem;
+  padding: 3%;
+}
+/* horizontal line */
+hr {
+  height: 0.5px;
+  background-color: #bdbdbd;
+  border: none;
+}
+/* inputs and labels */
+.form-group {
+  position: relative;
+}
+.Delivery-summary-container .delivery-address {
+  height: 100px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding:10px 120px 10px 10px;
+  
+}
+.change-address {
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.Delivery-summary-container .delivery-time,
+.Delivery-summary-container .delivery-contact {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding:10px;
+}
+.Delivery-summary-container .delivery-style {
+  height: 60px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding:10px;
+}
+.Delivery-summary-container .delivery-time::placeholder,
+.Delivery-summary-container .delivery-address::placeholder,
+.Delivery-summary-container .delivery-style::placeholder,
+.Delivery-summary-container .delivery-contact::placeholder {
+  color: #000;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-weight: 500;
+  padding: 5%;
+}
+/* ================================= */
+/* media query */
+/* ================================= */
+@media (min-width: 768px) {
+  .Delivery-summary-container {
+    margin-top: 8%;
+    width: 684px;
+    height: 816;
+  }
+}

@@ -1,0 +1,201 @@
+/* onboarding style */
+/* main container */
+.onboarding-container {
+  width: 100%;
+  min-height: 100dvh;
+}
+/* right side */
+
+.right-side-bg {
+  background-image: url(../assets/images/jollofRiceAndFriedChicken.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  margin: 1% auto;
+  min-height: 100dvh;
+  display: block;
+}
+.left-side {
+  margin-inline: 5%;
+}
+/* title */
+.title-onboarding {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ff7a18;
+  font-family: "Island Moments", cursive;
+  line-height: none;
+}
+/* sign in button */
+.signin {
+  text-align: right;
+  margin: 5%;
+}
+.signin button {
+  font-size: clamp(0.5rem, 5vw, 0.8rem);
+  color: #1e88e5;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #1e88e5;
+  padding: 5px 6%;
+  cursor: pointer;
+}
+/* title and description */
+.heading {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.heading-detail {
+  color: #1f2937;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-inline: 5%;
+  text-align: justify;
+}
+/* icon */
+.icon-wrapper {
+  background-color: #ffe1c4;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #ff7a18; /* fork & knife color */
+  font-size: 18px;
+}
+.icon-description {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  gap: 10px;
+}
+/* description next to icon */
+.description {
+  font-size: clamp(0.5rem, 5vw, 0.8rem);
+  font-weight: 400;
+  color: #000;
+}
+/* button container */
+.actions {
+  padding-bottom: 5%;
+}
+/* buttons */
+.start-order {
+  width: 90%;
+  max-width: 400px;
+  background-color: #ff7a18;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: clamp(0.5rem, 5vw, 0.8rem);
+  padding: 0.5rem 0;
+  margin: 8% auto 0 auto;
+  white-space: nowrap;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.learn-more {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  color: #1e88e5;
+  border: 2px solid #1e88e5;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: clamp(0.5rem, 5vw, 0.8rem);
+  padding: 0.5rem 0;
+  margin: 3% auto 0 auto;
+  white-space: nowrap;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.copy-right {
+  display: none;
+}
+/* ================================= */
+/* media query */
+/* ================================= */
+
+@media (min-width: 768px) {
+  /* login container */
+  .onboarding-container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .left-side {
+    flex: 1;
+    margin-inline: 0;
+    padding: 0 1%;
+  }
+
+  .right-side-bg {
+    flex: 1;
+    background-image: url(../assets/images/loginBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  /* title */
+  .title-onboarding {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #ff7a18;
+    font-family: "Island Moments", cursive;
+    line-height: none;
+  }
+  /* icon with description */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .icon-description {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-block: 5%;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    margin-left: 11%;
+  }
+
+  /* footer part on this specific page */
+  .copy-right {
+    display: block;
+  }
+ 
+  .copy-links ul,
+  .policy,.copy-paragraph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #1f2937;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 8%;
+  }
+  .policy {
+    color: #64b5f6;
+  }
+}

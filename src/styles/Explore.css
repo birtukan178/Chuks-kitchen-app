@@ -1,0 +1,40 @@
+/* first bg */
+.explore-landingBg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/exploreBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  color: white;
+  line-height: 50px;
+}
+
+/* menu categories */
+.menu-categories,
+.menu option {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5% 3%;
+}
+
+.menu,
+.menu option {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1% 2%;
+  padding-right: 20%;
+  border-radius: 8px;
+  border: 1px solid #ffe1c4;
+  margin-top: 2%;
+  display: block;
+}
+
+h2 {
+  padding: 2% 5%;
+}

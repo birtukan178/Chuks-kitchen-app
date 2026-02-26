@@ -1,0 +1,191 @@
+/* login style */
+/* right side */
+.right-side-bg {
+  display: none;
+}
+/* title */
+.title {
+  margin-top: 5%;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ff7a18;
+  font-family: "Island Moments", cursive;
+  line-height: none;
+}
+h1{display: none;}
+.sub-title {
+  display: none;
+}
+/* inputs */
+.login-input {
+  padding-inline: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bdbdbd;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.icon {
+  color: gray;
+  font-size: 18px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.social-icon {
+  font-size: 20px;
+}
+
+/* Brand colors */
+.google-icon {
+  color: #db4437;
+}
+
+.facebook-icon {
+  color: #1877f2;
+}
+
+/* forgot password */
+.forgot-pw {
+  text-align: right;
+  font-weight: 400;
+}
+.forgot-pw a {
+  color: #1e88e5;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+/* continue button */
+.login-input button {
+  width: 100%;
+  background-color: #ff7a18;
+  color: #fff;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+  padding-block: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-block: 16px;
+  cursor: pointer;
+}
+/* continue with */
+.or-continue {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.or-continue::before,
+.or-continue::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.or-continue::before {
+  margin-right: 10px;
+}
+
+.or-continue::after {
+  margin-left: 10px;
+}
+/* create account */
+.create-account {
+  text-align: center;
+  font-weight: 400;
+}
+.create-account a {
+  color: #1e88e5;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+/* Back to Home button */
+.back-home {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+  padding: 8px 12px;
+  border: 2px solid #1e90ff;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.back-home-btn:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+/* ================================= */
+/* media query */
+/* ================================= */
+
+@media (min-width: 768px) {
+  /* login container */
+  .login-container {
+    display: flex;
+    flex: 1;
+  }
+  .login-input {
+    width: 50%;
+    padding-inline: 10%;
+  }
+  /* right side */
+  .right-side-bg-login {
+    display: block;
+    background-image:
+      linear-gradient(rgba(255, 122, 24, 0.7), rgba(255, 122, 24, 0.7)),
+      url(../assets/images/loginBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  /* title */
+  .title {
+    padding-top: 15%;
+  }
+  /* sub-title */
+  .sub-title {
+    padding: 2% 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
