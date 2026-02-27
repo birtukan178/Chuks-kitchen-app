@@ -18,7 +18,7 @@ function App() {
   // const firstTimeUser = !localStorage.getItem("visited"); 
   const firstTimeUser = true;
   return (
-    <Router>
+    <Router basename="/Chuks-kitchen-app">
       <main>
         <Routes>
           {/* <Route
@@ -109,7 +109,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Payment/>
+                <Payment />
                 <Footer />
               </>
             }
