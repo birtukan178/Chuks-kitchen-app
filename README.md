@@ -57,6 +57,7 @@
      ✓ A Contact page was not provided in the Figma design.
      ✓ The desktop layout for the Sign Up page was not included, so assumptions were made based on the Sign Up design.
      ✓ The cart summary is not yet linked to a real payment system to transfer the total amount and others not included designs.
+     ✓ After deployment, the app behave slightly different in the browser compared to when opened locally.
      
 So,I plan to improve the app later by adding missing functionality and implementing pages not included in my code.
 
