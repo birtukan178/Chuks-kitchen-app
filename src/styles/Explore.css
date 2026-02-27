@@ -35,6 +35,18 @@
   display: block;
 }
 
+.explore-landingBg h1 {
+    display: block;
+  }
 h2 {
   padding: 2% 5%;
+}
+
+/* ================================= */
+/* media query */
+/* ================================= */
+@media (min-width: 768px) {
+  .explore-landingBg h1 {
+    display: block;
+  }
 }

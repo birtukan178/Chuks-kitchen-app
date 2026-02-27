@@ -21,6 +21,7 @@
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 10px;
+  display: block;
 }
 
 /* subtitle overlay on the background image */
@@ -28,6 +29,7 @@
   font-weight: 500;
   font-size: clamp(0.5rem, 5vw, 1rem);
   margin-bottom: 20px;
+  display: block;
 }
 
 /* button overlay on the background image*/
@@ -127,10 +129,12 @@ input::placeholder {
   .landing-title {
     padding-top: 3%;
     font-size: 3rem;
+    display: block;
   }
 
   .landing-subtitle {
     font-size: 1.5rem;
+    display: block;
   }
 
   /* input with search */
