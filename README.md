@@ -42,9 +42,11 @@
      ✓ filter cards/foods based on their category on explore page
      ✓ Add to cart logic assist to render orders on my order page
      ✓ Scroll-to-top button
+     
 👉 Design interpretation
      ✓ The Figma design was translated into a responsive React frontend using reusable components, CSS flex and grid for layout, and React Router for navigation. 
      ✓ Some assumptions were made for spacing and hover states. A “Back to Home” button was added on the Sign In and Sign Up pages to improve user experience. On the My Order page, a “View Order Summary” button and a total amount summary were added. Additionally, an optional search feature was included on the Explore page to help users find food items more easily.
+     
 👉 Limitations & Improvements
      ✓ The “View More” link does not yet have functional logic.
      ✓ A Contact page was not provided in the Figma design.
